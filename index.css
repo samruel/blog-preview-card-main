@@ -60,16 +60,15 @@ html {
 
 :root {
   --container-color: #fff;
-  --background-color: #d6e2f0;
-  --text-color: #68778d;
-  --header-color: #1f3251;
+  --background-color: #f4d04e;
+  --text-color: #6b6b6b;
+  --header-color: #121212;
 }
 
 body {
-  font-family: "Outfit", sans-serif;
-  font-style: normal;
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
   font-size: 16px;
-  background-color: var(--background-color);
 }
 
 main {
@@ -77,4 +76,80 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--background-color);
+}
+
+.blog-container {
+  width: 325px;
+  border: 1px solid black;
+  padding: 20px;
+  box-shadow: 8px 8px 0px rgba(0, 0, 0, 1);
+  border-radius: 15px;
+  background-color: var(--container-color);
+}
+
+.blog-container > *:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.blog-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.blog-tag {
+  display: inline-block;
+  background-color: var(--background-color);
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.blog-tag > p {
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+.date-posted {
+  font-size: 1.2rem;
+}
+
+.blog-title {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.blog-description {
+  color: var(--text-color);
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.author-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.author-img {
+  width: 30px;
+}
+
+.author-name {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+@media only screen and (min-width: 375px) {
+  .blog-container {
+    padding: 18px;
+  }
+
+  .blog-description {
+    font-size: 1.3rem;
+  }
+
+  .author-container {
+    margin-bottom: 5px;
+  }
 }
