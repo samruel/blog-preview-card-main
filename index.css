@@ -145,12 +145,33 @@ main {
   font-weight: 800;
 }
 
-@media only screen and (min-width: 375px) {
+@media only screen and (max-width: 375px) {
   .blog-container {
+    width: 300px;
     padding: 18px;
   }
 
   .author-container {
     margin-bottom: 5px;
+  }
+
+  .blog-tag > p {
+    font-size: 1.2rem;
+  }
+
+  .date-posted {
+    font-size: 1.2rem;
+  }
+
+  .blog-title {
+    font-size: 2rem;
+  }
+
+  .blog-description {
+    font-size: 1.4rem;
+  }
+
+  .author-name {
+    font-size: 1.3;
   }
 }
