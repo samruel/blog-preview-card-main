@@ -120,6 +120,7 @@ main {
 
 .blog-title:hover {
   color: var(--background-color);
+  cursor: pointer;
 }
 
 .blog-description {
