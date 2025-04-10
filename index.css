@@ -118,6 +118,10 @@ main {
   font-weight: 800;
 }
 
+.blog-title:hover {
+  color: var(--background-color);
+}
+
 .blog-description {
   color: var(--text-color);
   font-size: 2rem;
